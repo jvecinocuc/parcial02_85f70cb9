@@ -1,11 +1,14 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FaMusic } from 'react-icons/fa'; 
 
 const Cabecera: React.FC = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand as={Link} to="/">Conciertos Star</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/">
+        <FaMusic size={30} /> {/*Icon*/}
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
